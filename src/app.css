@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.userCard{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 36vw;
+    border-radius: 30px;
+}
+
+/*NOta: acá modifiqué una clase de MUI...se puede hacer*/
+.MuiCardActions-root{
+  display: flex;
+  justify-content: center;
+}
+
+.CardContainer{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 1rem;
+}

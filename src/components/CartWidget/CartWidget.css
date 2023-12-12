@@ -1,0 +1,12 @@
+.Cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Cart img{
+    max-width: 80px;
+    max-height: 80px;
+}

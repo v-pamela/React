@@ -1,0 +1,30 @@
+.container{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(226, 231, 235);
+  padding: 1rem;
+}
+
+.container h2{
+  font-size: 3rem;
+  color: rgba(8, 58, 143, 0.845);
+}
+.barra{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.barra ul{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.barra ul li{
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+}
