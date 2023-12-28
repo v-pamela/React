@@ -1,30 +1,26 @@
-.container{
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(226, 231, 235);
-  padding: 1rem;
+import './NavBar.css'
+import CartWidget from "../CartWidget/CartWidget"
+
+import { Link, NavLink } from 'react-router-dom';
+import { Button } from '@mui/material';
+
+
+const NavBar = () => {
+    return (
+      <nav className="container">
+        <Link to='/'> 
+          <h2>OfertasYa</h2>
+        </Link>
+
+        <div className="barra">
+          <Button><NavLink to={`/category/celular`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Celulares</NavLink></Button>
+          <Button><NavLink to={`/category/tablet`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Tablets</NavLink></Button>
+          <NavLink to={`/category/notebook`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><Button variant='contained'>Notebook</Button></NavLink>
+          
+        </div>
+        <CartWidget />
+      </nav>
+    );
 }
 
-.container h2{
-  font-size: 3rem;
-  color: rgba(8, 58, 143, 0.845);
-}
-.barra{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.barra ul{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.barra ul li{
-  margin: 1rem;
-  list-style: none;
-  display: flex;
-  font-size: 1.5rem;
-}
+export default NavBar
