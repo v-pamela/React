@@ -1,0 +1,15 @@
+.Counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Controls{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.Button, .Number{
+    margin: 1rem;
+}
